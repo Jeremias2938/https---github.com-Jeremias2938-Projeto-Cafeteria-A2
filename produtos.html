@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos cafeteria</title>
+    <link rel="stylesheet" href="assets/style_produtos.css">
+</head>
+<body>
+    <section class="menu" id="menu">
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+        </nav>
+
+        <h2 class="titulo">Nosso <span>menu</span></h2>
+        
+        <input type="text" id="filtro-nome" placeholder="Filtrar por nome" class="input-filtro">
+
+        <div class="caixa-container">
+           
+        </div>
+
+        <div class="caixa-container">
+            
+        </div>
+
+    </section>
+    
+    <section class="carrossel" id="carrossel">
+        <div class="slides">
+            <div class="slide" style="background-image: url('assets/img/BANNER01.png');"></div>
+            <div class="slide" style="background-image: url('assets/img/BANNER02.png');"></div>
+            <div class="slide" style="background-image: url('assets/img/BANNER03.png');"></div>
+        </div>
+        <a class="prev" onclick="mudarSlide(-1)">&#10094;</a>
+        <a class="next" onclick="mudarSlide(1)">&#10095;</a>
+    
+        <a href="home.html" class="botao-carrossel">Sobre Nós</a>
+    </section>
+    
+    <script src="./assets/produtos.js"></script>
+</body>
+</html>

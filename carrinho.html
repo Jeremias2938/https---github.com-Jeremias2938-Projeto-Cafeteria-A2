@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos Cafeteria</title>
+    <link rel="stylesheet" href="./assets/carrinho.css">
+</head>
+<body>
+
+    <section class="menu" id="menu">
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <h2 class="titulo">Meu <span>Carrinho</span></h2>
+        </nav> 
+
+     
+
+        <div class="caixa-container">
+
+        </div>
+
+        <div class="total">
+            <h1>Total: R$<span id="total">0.00</span></h1>
+            <ul id="itens-carrinho">
+                
+            </ul>
+            <button id="finalizar-compra" class="botao">Finalizar Compra</button>
+        </div>
+
+        <div class="carrinho-lateral">
+            <h2>Itens no Carrinho</h2>
+            <ul id="carrinho-lista">
+
+            </ul>
+        </div>
+    </div>
+    </section>
+
+    <script src="./assets/carrinho.js"></script>
+    <script src="./assets/usuario.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Usuario.verificarUsuariosAtivos();
+        });
+    </script>
+</body>
+</html>

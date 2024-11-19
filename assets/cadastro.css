@@ -1,0 +1,112 @@
+.caixa-video {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.caixa-video video {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.mascara {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #4e342e;
+    color: #ffffff; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-wrapper {
+    background-color: #110803;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffccbc;
+}
+
+.steps-wrapper {
+    width: 100%;
+}
+
+.step {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.step.active {
+    display: flex; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d7ccc8;
+    color: #3e2723;
+    font-size: 16px;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navigation-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7043;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.navigation-buttons button:hover {
+    background-color: #f4511e;
+}
+
+.message {
+    font-style: italic;
+    color: #ffccbc;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Cursive', sans-serif;
+}

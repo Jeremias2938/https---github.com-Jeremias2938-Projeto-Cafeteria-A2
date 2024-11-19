@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cafeteria</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    
+    <div class="caixa-video"> 
+        <video src="./assets/videos/coffe.mp4" loop muted autoplay></video>
+        <div class="mascara"></div>
+    </div>
+
+    <header class="header">
+        <section>
+            <a href="home.html">
+                <img src="./assets/img/logo.png" alt="logo-cafeteria">
+            </a>
+
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="sobre2.html">Sobre</a>
+                <a style="margin-left: 100px;" href="index.html" id="sair">Sair</a>
+            </nav>
+        </section>
+    </header>
+
+    <div>
+        <section class="caixa-principal">
+            <div>
+                <h3>O que faz nosso café ser especial</h3>
+                <p>A Cafeteria Cafena é sinônimo de qualidade e sabor. Com um ambiente acolhedor e os melhores grãos selecionados, proporcionamos experiências únicas a cada xícara. Venha descobrir por que somos a melhor escolha para os amantes de café! ☕✨</p>
+                <a class="botao-link" href="produtos.html">Ver Produtos</a>
+            </div>
+        </section>
+    </div>
+    <script src="./assets/usuario.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Usuario.verificarUsuariosAtivos();
+        });
+    </script>
+</body>
+</html>
